@@ -14,6 +14,7 @@ gem 'spring',        group: :development
 gem 'haml-rails'
 gem 'html2haml'
 gem 'devise'
+gem "paperclip", "~> 4.1"
 
 
 # Use ActiveModel has_secure_password
