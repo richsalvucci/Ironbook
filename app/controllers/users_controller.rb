@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!
+
   def index
   end
 
@@ -10,6 +12,13 @@ class UsersController < ApplicationController
 
   def delete
   end
+
+  private
+
+  def user_params
+  end
+
+
 
 
 end
