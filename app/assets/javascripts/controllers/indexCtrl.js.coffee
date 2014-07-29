@@ -10,4 +10,4 @@
     console.log "Does this load?"
     $location.url("/users/new")
 
-  bookData.loadBooks(null)
+  userData.loadUsers(null)
