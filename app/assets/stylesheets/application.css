@@ -15,3 +15,11 @@
  *= require_tree .
  *= require_self
  */
+
+/*.navbar.navbar-inverse.navbar-fixed-top{
+  margin-bottom: 50px;
+}*/
+
+.container.theme-showcase{
+  margin-top: 50px;
+}
