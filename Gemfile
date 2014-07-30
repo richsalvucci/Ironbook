@@ -15,6 +15,8 @@ gem 'haml-rails'
 gem 'html2haml'
 gem 'devise'
 gem "paperclip", "~> 4.1"
+gem 'figaro'
+gem "paperclip-dropbox", ">= 1.1.7"
 
 
 # Use ActiveModel has_secure_password
