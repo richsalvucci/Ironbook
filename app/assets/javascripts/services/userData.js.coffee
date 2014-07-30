@@ -29,3 +29,8 @@ angular.module("User").factory("userkData", ['$http', ($http) ->
     else
       if deferred
         deferred.resolve()
+
+
+  return userData
+])
+
