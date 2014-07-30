@@ -4,14 +4,30 @@
   %div
     = f.label :email
     %br/
-    = f.email_field :email, autofocus: true
+    = f.email_field :email, required: true, autofocus: true
+  %div
+    = f.label :name
+    %br/
+    = f.text_field :name, required: true
+  %div
+    = f.label :location
+    %br/
+    = f.text_field :location, required: true
+  %div
+    = f.label :course
+    %br/
+    = f.text_field :course, required: true
+  %div
+    = f.label :phone
+    %br/
+    = f.telephone_field :phone, required: true
   %div
     = f.label :password
     %br/
-    = f.password_field :password, autocomplete: "off"
+    = f.password_field :password, required: true, autocomplete: "off", placeholder: '8 character minimum'
   %div
     = f.label :password_confirmation
     %br/
-    = f.password_field :password_confirmation, autocomplete: "off"
+    = f.password_field :password_confirmation, required: true, autocomplete: "off"
   %div= f.submit "Sign up"
 = render "devise/shared/links"

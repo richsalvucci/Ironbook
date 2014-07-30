@@ -10,6 +10,26 @@
     %div
       Currently waiting confirmation for: #{resource.unconfirmed_email}
   %div
+    = f.label :name
+    %i (leave blank if you don't want to change it)
+    %br/
+    = f.text_field :name
+  %div
+    = f.label :location
+    %i (leave blank if you don't want to change it)
+    %br/
+    = f.text_field :location
+  %div
+    = f.label :course
+    %i (leave blank if you don't want to change it)
+    %br/
+    = f.text_field :course
+  %div
+    = f.label :phone
+    %i (leave blank if you don't want to change it)
+    %br/
+    = f.telephone_field :phone, pattern: '\d{3}[\-]\d{3}[\-]\d{4}', placeholder: 'format = 888-888-8888'
+  %div
     = f.label :password
     %i (leave blank if you don't want to change it)
     %br/
